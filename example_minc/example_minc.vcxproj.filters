@@ -1,0 +1,414 @@
+<?xml version="1.0"?>
+<Project ToolsVersion="4.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+	<ItemGroup>
+		<ClCompile Include="src\ofApp.cpp">
+			<Filter>src</Filter>
+		</ClCompile>
+		<ClCompile Include="src\main.cpp">
+			<Filter>src</Filter>
+		</ClCompile>
+		<ClCompile Include="..\..\..\addons\ofxVolumetrics\src\ofxTexture3d.cpp">
+			<Filter>addons\ofxVolumetrics\src</Filter>
+		</ClCompile>
+		<ClCompile Include="..\..\..\addons\ofxVolumetrics\src\ofxVolumetrics.cpp">
+			<Filter>addons\ofxVolumetrics\src</Filter>
+		</ClCompile>
+	</ItemGroup>
+	<ItemGroup>
+		<Filter Include="src">
+			<UniqueIdentifier>{d8376475-7454-4a24-b08a-aac121d3ad6f}</UniqueIdentifier>
+		</Filter>
+		<Filter Include="addons">
+			<UniqueIdentifier>{71834F65-F3A9-211E-73B8-DC85}</UniqueIdentifier>
+		</Filter>
+		<Filter Include="addons\ofxVolumetrics">
+			<UniqueIdentifier>{0226A1D6-F91F-C208-3DA4-BE30}</UniqueIdentifier>
+		</Filter>
+		<Filter Include="addons\ofxVolumetrics\src">
+			<UniqueIdentifier>{96061398-3BB0-BAA9-130B-5418}</UniqueIdentifier>
+		</Filter>
+		<Filter Include="addons\ofxVolumetrics\libs">
+			<UniqueIdentifier>{CB9B38EF-19C5-6143-684B-5423}</UniqueIdentifier>
+		</Filter>
+		<Filter Include="addons\ofxVolumetrics\libs\minc">
+			<UniqueIdentifier>{97E294C9-D41A-0FE1-4B84-E543}</UniqueIdentifier>
+		</Filter>
+		<Filter Include="addons\ofxVolumetrics\libs\minc\include">
+			<UniqueIdentifier>{BB69F96B-7762-9C7D-F565-4537}</UniqueIdentifier>
+		</Filter>
+		<Filter Include="addons\ofxVolumetrics\libs\minc\include\szip">
+			<UniqueIdentifier>{E4E0D927-9CDC-AB99-DCFF-495D}</UniqueIdentifier>
+		</Filter>
+		<Filter Include="addons\ofxVolumetrics\libs\minc\include\volume_io">
+			<UniqueIdentifier>{BA26BF17-89D5-DCA1-9E88-582D}</UniqueIdentifier>
+		</Filter>
+		<Filter Include="addons\ofxVolumetrics\libs\minc\include\zlib">
+			<UniqueIdentifier>{645CD10D-F413-1CDB-39FB-9060}</UniqueIdentifier>
+		</Filter>
+	</ItemGroup>
+	<ItemGroup>
+		<ClInclude Include="src\ofApp.h">
+			<Filter>src</Filter>
+		</ClInclude>
+		<ClInclude Include="..\..\..\addons\ofxVolumetrics\src\ofxImageSequencePlayer.h">
+			<Filter>addons\ofxVolumetrics\src</Filter>
+		</ClInclude>
+		<ClInclude Include="..\..\..\addons\ofxVolumetrics\src\ofxTexture3d.h">
+			<Filter>addons\ofxVolumetrics\src</Filter>
+		</ClInclude>
+		<ClInclude Include="..\..\..\addons\ofxVolumetrics\src\ofxVolumetrics.h">
+			<Filter>addons\ofxVolumetrics\src</Filter>
+		</ClInclude>
+		<ClInclude Include="..\..\..\addons\ofxVolumetrics\libs\minc\include\config.h">
+			<Filter>addons\ofxVolumetrics\libs\minc\include</Filter>
+		</ClInclude>
+		<ClInclude Include="..\..\..\addons\ofxVolumetrics\libs\minc\include\H5ACprivate.h">
+			<Filter>addons\ofxVolumetrics\libs\minc\include</Filter>
+		</ClInclude>
+		<ClInclude Include="..\..\..\addons\ofxVolumetrics\libs\minc\include\H5ACpublic.h">
+			<Filter>addons\ofxVolumetrics\libs\minc\include</Filter>
+		</ClInclude>
+		<ClInclude Include="..\..\..\addons\ofxVolumetrics\libs\minc\include\H5api_adpt.h">
+			<Filter>addons\ofxVolumetrics\libs\minc\include</Filter>
+		</ClInclude>
+		<ClInclude Include="..\..\..\addons\ofxVolumetrics\libs\minc\include\H5Apkg.h">
+			<Filter>addons\ofxVolumetrics\libs\minc\include</Filter>
+		</ClInclude>
+		<ClInclude Include="..\..\..\addons\ofxVolumetrics\libs\minc\include\H5Aprivate.h">
+			<Filter>addons\ofxVolumetrics\libs\minc\include</Filter>
+		</ClInclude>
+		<ClInclude Include="..\..\..\addons\ofxVolumetrics\libs\minc\include\H5Apublic.h">
+			<Filter>addons\ofxVolumetrics\libs\minc\include</Filter>
+		</ClInclude>
+		<ClInclude Include="..\..\..\addons\ofxVolumetrics\libs\minc\include\H5Bpkg.h">
+			<Filter>addons\ofxVolumetrics\libs\minc\include</Filter>
+		</ClInclude>
+		<ClInclude Include="..\..\..\addons\ofxVolumetrics\libs\minc\include\H5Bprivate.h">
+			<Filter>addons\ofxVolumetrics\libs\minc\include</Filter>
+		</ClInclude>
+		<ClInclude Include="..\..\..\addons\ofxVolumetrics\libs\minc\include\H5Bpublic.h">
+			<Filter>addons\ofxVolumetrics\libs\minc\include</Filter>
+		</ClInclude>
+		<ClInclude Include="..\..\..\addons\ofxVolumetrics\libs\minc\include\H5config.h">
+			<Filter>addons\ofxVolumetrics\libs\minc\include</Filter>
+		</ClInclude>
+		<ClInclude Include="..\..\..\addons\ofxVolumetrics\libs\minc\include\H5Cprivate.h">
+			<Filter>addons\ofxVolumetrics\libs\minc\include</Filter>
+		</ClInclude>
+		<ClInclude Include="..\..\..\addons\ofxVolumetrics\libs\minc\include\H5Cpublic.h">
+			<Filter>addons\ofxVolumetrics\libs\minc\include</Filter>
+		</ClInclude>
+		<ClInclude Include="..\..\..\addons\ofxVolumetrics\libs\minc\include\H5Dpkg.h">
+			<Filter>addons\ofxVolumetrics\libs\minc\include</Filter>
+		</ClInclude>
+		<ClInclude Include="..\..\..\addons\ofxVolumetrics\libs\minc\include\H5Dprivate.h">
+			<Filter>addons\ofxVolumetrics\libs\minc\include</Filter>
+		</ClInclude>
+		<ClInclude Include="..\..\..\addons\ofxVolumetrics\libs\minc\include\H5Dpublic.h">
+			<Filter>addons\ofxVolumetrics\libs\minc\include</Filter>
+		</ClInclude>
+		<ClInclude Include="..\..\..\addons\ofxVolumetrics\libs\minc\include\H5Eprivate.h">
+			<Filter>addons\ofxVolumetrics\libs\minc\include</Filter>
+		</ClInclude>
+		<ClInclude Include="..\..\..\addons\ofxVolumetrics\libs\minc\include\H5Epublic.h">
+			<Filter>addons\ofxVolumetrics\libs\minc\include</Filter>
+		</ClInclude>
+		<ClInclude Include="..\..\..\addons\ofxVolumetrics\libs\minc\include\H5FDcore.h">
+			<Filter>addons\ofxVolumetrics\libs\minc\include</Filter>
+		</ClInclude>
+		<ClInclude Include="..\..\..\addons\ofxVolumetrics\libs\minc\include\H5FDfamily.h">
+			<Filter>addons\ofxVolumetrics\libs\minc\include</Filter>
+		</ClInclude>
+		<ClInclude Include="..\..\..\addons\ofxVolumetrics\libs\minc\include\H5FDgass.h">
+			<Filter>addons\ofxVolumetrics\libs\minc\include</Filter>
+		</ClInclude>
+		<ClInclude Include="..\..\..\addons\ofxVolumetrics\libs\minc\include\H5FDlog.h">
+			<Filter>addons\ofxVolumetrics\libs\minc\include</Filter>
+		</ClInclude>
+		<ClInclude Include="..\..\..\addons\ofxVolumetrics\libs\minc\include\H5FDmpi.h">
+			<Filter>addons\ofxVolumetrics\libs\minc\include</Filter>
+		</ClInclude>
+		<ClInclude Include="..\..\..\addons\ofxVolumetrics\libs\minc\include\H5FDmpio.h">
+			<Filter>addons\ofxVolumetrics\libs\minc\include</Filter>
+		</ClInclude>
+		<ClInclude Include="..\..\..\addons\ofxVolumetrics\libs\minc\include\H5FDmpiposix.h">
+			<Filter>addons\ofxVolumetrics\libs\minc\include</Filter>
+		</ClInclude>
+		<ClInclude Include="..\..\..\addons\ofxVolumetrics\libs\minc\include\H5FDmulti.h">
+			<Filter>addons\ofxVolumetrics\libs\minc\include</Filter>
+		</ClInclude>
+		<ClInclude Include="..\..\..\addons\ofxVolumetrics\libs\minc\include\H5FDprivate.h">
+			<Filter>addons\ofxVolumetrics\libs\minc\include</Filter>
+		</ClInclude>
+		<ClInclude Include="..\..\..\addons\ofxVolumetrics\libs\minc\include\H5FDpublic.h">
+			<Filter>addons\ofxVolumetrics\libs\minc\include</Filter>
+		</ClInclude>
+		<ClInclude Include="..\..\..\addons\ofxVolumetrics\libs\minc\include\H5FDsec2.h">
+			<Filter>addons\ofxVolumetrics\libs\minc\include</Filter>
+		</ClInclude>
+		<ClInclude Include="..\..\..\addons\ofxVolumetrics\libs\minc\include\H5FDsrb.h">
+			<Filter>addons\ofxVolumetrics\libs\minc\include</Filter>
+		</ClInclude>
+		<ClInclude Include="..\..\..\addons\ofxVolumetrics\libs\minc\include\H5FDstdio.h">
+			<Filter>addons\ofxVolumetrics\libs\minc\include</Filter>
+		</ClInclude>
+		<ClInclude Include="..\..\..\addons\ofxVolumetrics\libs\minc\include\H5FDstream.h">
+			<Filter>addons\ofxVolumetrics\libs\minc\include</Filter>
+		</ClInclude>
+		<ClInclude Include="..\..\..\addons\ofxVolumetrics\libs\minc\include\H5FLprivate.h">
+			<Filter>addons\ofxVolumetrics\libs\minc\include</Filter>
+		</ClInclude>
+		<ClInclude Include="..\..\..\addons\ofxVolumetrics\libs\minc\include\H5FOprivate.h">
+			<Filter>addons\ofxVolumetrics\libs\minc\include</Filter>
+		</ClInclude>
+		<ClInclude Include="..\..\..\addons\ofxVolumetrics\libs\minc\include\H5Fpkg.h">
+			<Filter>addons\ofxVolumetrics\libs\minc\include</Filter>
+		</ClInclude>
+		<ClInclude Include="..\..\..\addons\ofxVolumetrics\libs\minc\include\H5Fprivate.h">
+			<Filter>addons\ofxVolumetrics\libs\minc\include</Filter>
+		</ClInclude>
+		<ClInclude Include="..\..\..\addons\ofxVolumetrics\libs\minc\include\H5Fpublic.h">
+			<Filter>addons\ofxVolumetrics\libs\minc\include</Filter>
+		</ClInclude>
+		<ClInclude Include="..\..\..\addons\ofxVolumetrics\libs\minc\include\H5FSprivate.h">
+			<Filter>addons\ofxVolumetrics\libs\minc\include</Filter>
+		</ClInclude>
+		<ClInclude Include="..\..\..\addons\ofxVolumetrics\libs\minc\include\H5Gpkg.h">
+			<Filter>addons\ofxVolumetrics\libs\minc\include</Filter>
+		</ClInclude>
+		<ClInclude Include="..\..\..\addons\ofxVolumetrics\libs\minc\include\H5Gprivate.h">
+			<Filter>addons\ofxVolumetrics\libs\minc\include</Filter>
+		</ClInclude>
+		<ClInclude Include="..\..\..\addons\ofxVolumetrics\libs\minc\include\H5Gpublic.h">
+			<Filter>addons\ofxVolumetrics\libs\minc\include</Filter>
+		</ClInclude>
+		<ClInclude Include="..\..\..\addons\ofxVolumetrics\libs\minc\include\H5HGpkg.h">
+			<Filter>addons\ofxVolumetrics\libs\minc\include</Filter>
+		</ClInclude>
+		<ClInclude Include="..\..\..\addons\ofxVolumetrics\libs\minc\include\H5HGprivate.h">
+			<Filter>addons\ofxVolumetrics\libs\minc\include</Filter>
+		</ClInclude>
+		<ClInclude Include="..\..\..\addons\ofxVolumetrics\libs\minc\include\H5HGpublic.h">
+			<Filter>addons\ofxVolumetrics\libs\minc\include</Filter>
+		</ClInclude>
+		<ClInclude Include="..\..\..\addons\ofxVolumetrics\libs\minc\include\H5HLpkg.h">
+			<Filter>addons\ofxVolumetrics\libs\minc\include</Filter>
+		</ClInclude>
+		<ClInclude Include="..\..\..\addons\ofxVolumetrics\libs\minc\include\H5HLprivate.h">
+			<Filter>addons\ofxVolumetrics\libs\minc\include</Filter>
+		</ClInclude>
+		<ClInclude Include="..\..\..\addons\ofxVolumetrics\libs\minc\include\H5HLpublic.h">
+			<Filter>addons\ofxVolumetrics\libs\minc\include</Filter>
+		</ClInclude>
+		<ClInclude Include="..\..\..\addons\ofxVolumetrics\libs\minc\include\H5HPprivate.h">
+			<Filter>addons\ofxVolumetrics\libs\minc\include</Filter>
+		</ClInclude>
+		<ClInclude Include="..\..\..\addons\ofxVolumetrics\libs\minc\include\H5Ipkg.h">
+			<Filter>addons\ofxVolumetrics\libs\minc\include</Filter>
+		</ClInclude>
+		<ClInclude Include="..\..\..\addons\ofxVolumetrics\libs\minc\include\H5Iprivate.h">
+			<Filter>addons\ofxVolumetrics\libs\minc\include</Filter>
+		</ClInclude>
+		<ClInclude Include="..\..\..\addons\ofxVolumetrics\libs\minc\include\H5Ipublic.h">
+			<Filter>addons\ofxVolumetrics\libs\minc\include</Filter>
+		</ClInclude>
+		<ClInclude Include="..\..\..\addons\ofxVolumetrics\libs\minc\include\H5MFprivate.h">
+			<Filter>addons\ofxVolumetrics\libs\minc\include</Filter>
+		</ClInclude>
+		<ClInclude Include="..\..\..\addons\ofxVolumetrics\libs\minc\include\H5MMprivate.h">
+			<Filter>addons\ofxVolumetrics\libs\minc\include</Filter>
+		</ClInclude>
+		<ClInclude Include="..\..\..\addons\ofxVolumetrics\libs\minc\include\H5MMpublic.h">
+			<Filter>addons\ofxVolumetrics\libs\minc\include</Filter>
+		</ClInclude>
+		<ClInclude Include="..\..\..\addons\ofxVolumetrics\libs\minc\include\H5MPprivate.h">
+			<Filter>addons\ofxVolumetrics\libs\minc\include</Filter>
+		</ClInclude>
+		<ClInclude Include="..\..\..\addons\ofxVolumetrics\libs\minc\include\H5Opkg.h">
+			<Filter>addons\ofxVolumetrics\libs\minc\include</Filter>
+		</ClInclude>
+		<ClInclude Include="..\..\..\addons\ofxVolumetrics\libs\minc\include\H5Oprivate.h">
+			<Filter>addons\ofxVolumetrics\libs\minc\include</Filter>
+		</ClInclude>
+		<ClInclude Include="..\..\..\addons\ofxVolumetrics\libs\minc\include\H5Opublic.h">
+			<Filter>addons\ofxVolumetrics\libs\minc\include</Filter>
+		</ClInclude>
+		<ClInclude Include="..\..\..\addons\ofxVolumetrics\libs\minc\include\H5Ppkg.h">
+			<Filter>addons\ofxVolumetrics\libs\minc\include</Filter>
+		</ClInclude>
+		<ClInclude Include="..\..\..\addons\ofxVolumetrics\libs\minc\include\H5Pprivate.h">
+			<Filter>addons\ofxVolumetrics\libs\minc\include</Filter>
+		</ClInclude>
+		<ClInclude Include="..\..\..\addons\ofxVolumetrics\libs\minc\include\H5Ppublic.h">
+			<Filter>addons\ofxVolumetrics\libs\minc\include</Filter>
+		</ClInclude>
+		<ClInclude Include="..\..\..\addons\ofxVolumetrics\libs\minc\include\H5private.h">
+			<Filter>addons\ofxVolumetrics\libs\minc\include</Filter>
+		</ClInclude>
+		<ClInclude Include="..\..\..\addons\ofxVolumetrics\libs\minc\include\H5pubconf.h">
+			<Filter>addons\ofxVolumetrics\libs\minc\include</Filter>
+		</ClInclude>
+		<ClInclude Include="..\..\..\addons\ofxVolumetrics\libs\minc\include\H5public.h">
+			<Filter>addons\ofxVolumetrics\libs\minc\include</Filter>
+		</ClInclude>
+		<ClInclude Include="..\..\..\addons\ofxVolumetrics\libs\minc\include\H5RCprivate.h">
+			<Filter>addons\ofxVolumetrics\libs\minc\include</Filter>
+		</ClInclude>
+		<ClInclude Include="..\..\..\addons\ofxVolumetrics\libs\minc\include\H5Rprivate.h">
+			<Filter>addons\ofxVolumetrics\libs\minc\include</Filter>
+		</ClInclude>
+		<ClInclude Include="..\..\..\addons\ofxVolumetrics\libs\minc\include\H5Rpublic.h">
+			<Filter>addons\ofxVolumetrics\libs\minc\include</Filter>
+		</ClInclude>
+		<ClInclude Include="..\..\..\addons\ofxVolumetrics\libs\minc\include\H5RSprivate.h">
+			<Filter>addons\ofxVolumetrics\libs\minc\include</Filter>
+		</ClInclude>
+		<ClInclude Include="..\..\..\addons\ofxVolumetrics\libs\minc\include\H5SLprivate.h">
+			<Filter>addons\ofxVolumetrics\libs\minc\include</Filter>
+		</ClInclude>
+		<ClInclude Include="..\..\..\addons\ofxVolumetrics\libs\minc\include\H5Spkg.h">
+			<Filter>addons\ofxVolumetrics\libs\minc\include</Filter>
+		</ClInclude>
+		<ClInclude Include="..\..\..\addons\ofxVolumetrics\libs\minc\include\H5Sprivate.h">
+			<Filter>addons\ofxVolumetrics\libs\minc\include</Filter>
+		</ClInclude>
+		<ClInclude Include="..\..\..\addons\ofxVolumetrics\libs\minc\include\H5Spublic.h">
+			<Filter>addons\ofxVolumetrics\libs\minc\include</Filter>
+		</ClInclude>
+		<ClInclude Include="..\..\..\addons\ofxVolumetrics\libs\minc\include\H5STprivate.h">
+			<Filter>addons\ofxVolumetrics\libs\minc\include</Filter>
+		</ClInclude>
+		<ClInclude Include="..\..\..\addons\ofxVolumetrics\libs\minc\include\H5Tpkg.h">
+			<Filter>addons\ofxVolumetrics\libs\minc\include</Filter>
+		</ClInclude>
+		<ClInclude Include="..\..\..\addons\ofxVolumetrics\libs\minc\include\H5Tprivate.h">
+			<Filter>addons\ofxVolumetrics\libs\minc\include</Filter>
+		</ClInclude>
+		<ClInclude Include="..\..\..\addons\ofxVolumetrics\libs\minc\include\H5Tpublic.h">
+			<Filter>addons\ofxVolumetrics\libs\minc\include</Filter>
+		</ClInclude>
+		<ClInclude Include="..\..\..\addons\ofxVolumetrics\libs\minc\include\H5TSprivate.h">
+			<Filter>addons\ofxVolumetrics\libs\minc\include</Filter>
+		</ClInclude>
+		<ClInclude Include="..\..\..\addons\ofxVolumetrics\libs\minc\include\H5Vprivate.h">
+			<Filter>addons\ofxVolumetrics\libs\minc\include</Filter>
+		</ClInclude>
+		<ClInclude Include="..\..\..\addons\ofxVolumetrics\libs\minc\include\H5Zpkg.h">
+			<Filter>addons\ofxVolumetrics\libs\minc\include</Filter>
+		</ClInclude>
+		<ClInclude Include="..\..\..\addons\ofxVolumetrics\libs\minc\include\H5Zprivate.h">
+			<Filter>addons\ofxVolumetrics\libs\minc\include</Filter>
+		</ClInclude>
+		<ClInclude Include="..\..\..\addons\ofxVolumetrics\libs\minc\include\H5Zpublic.h">
+			<Filter>addons\ofxVolumetrics\libs\minc\include</Filter>
+		</ClInclude>
+		<ClInclude Include="..\..\..\addons\ofxVolumetrics\libs\minc\include\hdf5.h">
+			<Filter>addons\ofxVolumetrics\libs\minc\include</Filter>
+		</ClInclude>
+		<ClInclude Include="..\..\..\addons\ofxVolumetrics\libs\minc\include\internal_volume_io.h">
+			<Filter>addons\ofxVolumetrics\libs\minc\include</Filter>
+		</ClInclude>
+		<ClInclude Include="..\..\..\addons\ofxVolumetrics\libs\minc\include\minc.h">
+			<Filter>addons\ofxVolumetrics\libs\minc\include</Filter>
+		</ClInclude>
+		<ClInclude Include="..\..\..\addons\ofxVolumetrics\libs\minc\include\minc2.h">
+			<Filter>addons\ofxVolumetrics\libs\minc\include</Filter>
+		</ClInclude>
+		<ClInclude Include="..\..\..\addons\ofxVolumetrics\libs\minc\include\minc_compat.h">
+			<Filter>addons\ofxVolumetrics\libs\minc\include</Filter>
+		</ClInclude>
+		<ClInclude Include="..\..\..\addons\ofxVolumetrics\libs\minc\include\minc_simple.h">
+			<Filter>addons\ofxVolumetrics\libs\minc\include</Filter>
+		</ClInclude>
+		<ClInclude Include="..\..\..\addons\ofxVolumetrics\libs\minc\include\nd_loop.h">
+			<Filter>addons\ofxVolumetrics\libs\minc\include</Filter>
+		</ClInclude>
+		<ClInclude Include="..\..\..\addons\ofxVolumetrics\libs\minc\include\netcdf.h">
+			<Filter>addons\ofxVolumetrics\libs\minc\include</Filter>
+		</ClInclude>
+		<ClInclude Include="..\..\..\addons\ofxVolumetrics\libs\minc\include\ParseArgv.h">
+			<Filter>addons\ofxVolumetrics\libs\minc\include</Filter>
+		</ClInclude>
+		<ClInclude Include="..\..\..\addons\ofxVolumetrics\libs\minc\include\szip\mcgill.h">
+			<Filter>addons\ofxVolumetrics\libs\minc\include\szip</Filter>
+		</ClInclude>
+		<ClInclude Include="..\..\..\addons\ofxVolumetrics\libs\minc\include\szip\rice.h">
+			<Filter>addons\ofxVolumetrics\libs\minc\include\szip</Filter>
+		</ClInclude>
+		<ClInclude Include="..\..\..\addons\ofxVolumetrics\libs\minc\include\szip\ricehdf.h">
+			<Filter>addons\ofxVolumetrics\libs\minc\include\szip</Filter>
+		</ClInclude>
+		<ClInclude Include="..\..\..\addons\ofxVolumetrics\libs\minc\include\szip\SZconfig.h">
+			<Filter>addons\ofxVolumetrics\libs\minc\include\szip</Filter>
+		</ClInclude>
+		<ClInclude Include="..\..\..\addons\ofxVolumetrics\libs\minc\include\szip\szip_adpt.h">
+			<Filter>addons\ofxVolumetrics\libs\minc\include\szip</Filter>
+		</ClInclude>
+		<ClInclude Include="..\..\..\addons\ofxVolumetrics\libs\minc\include\szlib.h">
+			<Filter>addons\ofxVolumetrics\libs\minc\include</Filter>
+		</ClInclude>
+		<ClInclude Include="..\..\..\addons\ofxVolumetrics\libs\minc\include\time_stamp.h">
+			<Filter>addons\ofxVolumetrics\libs\minc\include</Filter>
+		</ClInclude>
+		<ClInclude Include="..\..\..\addons\ofxVolumetrics\libs\minc\include\volume_io\alloc.h">
+			<Filter>addons\ofxVolumetrics\libs\minc\include\volume_io</Filter>
+		</ClInclude>
+		<ClInclude Include="..\..\..\addons\ofxVolumetrics\libs\minc\include\volume_io\arrays.h">
+			<Filter>addons\ofxVolumetrics\libs\minc\include\volume_io</Filter>
+		</ClInclude>
+		<ClInclude Include="..\..\..\addons\ofxVolumetrics\libs\minc\include\volume_io\basic.h">
+			<Filter>addons\ofxVolumetrics\libs\minc\include\volume_io</Filter>
+		</ClInclude>
+		<ClInclude Include="..\..\..\addons\ofxVolumetrics\libs\minc\include\volume_io\def_math.h">
+			<Filter>addons\ofxVolumetrics\libs\minc\include\volume_io</Filter>
+		</ClInclude>
+		<ClInclude Include="..\..\..\addons\ofxVolumetrics\libs\minc\include\volume_io\files.h">
+			<Filter>addons\ofxVolumetrics\libs\minc\include\volume_io</Filter>
+		</ClInclude>
+		<ClInclude Include="..\..\..\addons\ofxVolumetrics\libs\minc\include\volume_io\geometry.h">
+			<Filter>addons\ofxVolumetrics\libs\minc\include\volume_io</Filter>
+		</ClInclude>
+		<ClInclude Include="..\..\..\addons\ofxVolumetrics\libs\minc\include\volume_io\geom_structs.h">
+			<Filter>addons\ofxVolumetrics\libs\minc\include\volume_io</Filter>
+		</ClInclude>
+		<ClInclude Include="..\..\..\addons\ofxVolumetrics\libs\minc\include\volume_io\multidim.h">
+			<Filter>addons\ofxVolumetrics\libs\minc\include\volume_io</Filter>
+		</ClInclude>
+		<ClInclude Include="..\..\..\addons\ofxVolumetrics\libs\minc\include\volume_io\progress.h">
+			<Filter>addons\ofxVolumetrics\libs\minc\include\volume_io</Filter>
+		</ClInclude>
+		<ClInclude Include="..\..\..\addons\ofxVolumetrics\libs\minc\include\volume_io\string_funcs.h">
+			<Filter>addons\ofxVolumetrics\libs\minc\include\volume_io</Filter>
+		</ClInclude>
+		<ClInclude Include="..\..\..\addons\ofxVolumetrics\libs\minc\include\volume_io\system_dependent.h">
+			<Filter>addons\ofxVolumetrics\libs\minc\include\volume_io</Filter>
+		</ClInclude>
+		<ClInclude Include="..\..\..\addons\ofxVolumetrics\libs\minc\include\volume_io\transforms.h">
+			<Filter>addons\ofxVolumetrics\libs\minc\include\volume_io</Filter>
+		</ClInclude>
+		<ClInclude Include="..\..\..\addons\ofxVolumetrics\libs\minc\include\volume_io\volume.h">
+			<Filter>addons\ofxVolumetrics\libs\minc\include\volume_io</Filter>
+		</ClInclude>
+		<ClInclude Include="..\..\..\addons\ofxVolumetrics\libs\minc\include\volume_io\volume_cache.h">
+			<Filter>addons\ofxVolumetrics\libs\minc\include\volume_io</Filter>
+		</ClInclude>
+		<ClInclude Include="..\..\..\addons\ofxVolumetrics\libs\minc\include\volume_io\vol_io_prototypes.h">
+			<Filter>addons\ofxVolumetrics\libs\minc\include\volume_io</Filter>
+		</ClInclude>
+		<ClInclude Include="..\..\..\addons\ofxVolumetrics\libs\minc\include\volume_io.h">
+			<Filter>addons\ofxVolumetrics\libs\minc\include</Filter>
+		</ClInclude>
+		<ClInclude Include="..\..\..\addons\ofxVolumetrics\libs\minc\include\voxel_loop.h">
+			<Filter>addons\ofxVolumetrics\libs\minc\include</Filter>
+		</ClInclude>
+		<ClInclude Include="..\..\..\addons\ofxVolumetrics\libs\minc\include\zlib\zconf.h">
+			<Filter>addons\ofxVolumetrics\libs\minc\include\zlib</Filter>
+		</ClInclude>
+		<ClInclude Include="..\..\..\addons\ofxVolumetrics\libs\minc\include\zlib.h">
+			<Filter>addons\ofxVolumetrics\libs\minc\include</Filter>
+		</ClInclude>
+	</ItemGroup>
+	<ItemGroup>
+		<ResourceCompile Include="icon.rc" />
+	</ItemGroup>
+</Project>

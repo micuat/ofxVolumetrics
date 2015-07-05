@@ -1,0 +1,231 @@
+<?xml version="1.0"?>
+<Project DefaultTargets="Build" ToolsVersion="4.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+	<ItemGroup Label="ProjectConfigurations">
+		<ProjectConfiguration Include="Debug|Win32">
+			<Configuration>Debug</Configuration>
+			<Platform>Win32</Platform>
+		</ProjectConfiguration>
+		<ProjectConfiguration Include="Release|Win32">
+			<Configuration>Release</Configuration>
+			<Platform>Win32</Platform>
+		</ProjectConfiguration>
+	</ItemGroup>
+	<PropertyGroup Label="Globals">
+		<ProjectGuid>{7FD42DF7-442E-479A-BA76-D0022F99702A}</ProjectGuid>
+		<Keyword>Win32Proj</Keyword>
+		<RootNamespace>example_minc</RootNamespace>
+	</PropertyGroup>
+	<Import Project="$(VCTargetsPath)\Microsoft.Cpp.Default.props" />
+	<PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'" Label="Configuration">
+		<ConfigurationType>Application</ConfigurationType>
+		<CharacterSet>Unicode</CharacterSet>
+		<PlatformToolset>v110</PlatformToolset>
+	</PropertyGroup>
+	<PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Release|Win32'" Label="Configuration">
+		<ConfigurationType>Application</ConfigurationType>
+		<CharacterSet>Unicode</CharacterSet>
+		<WholeProgramOptimization>true</WholeProgramOptimization>
+		<PlatformToolset>v110</PlatformToolset>
+	</PropertyGroup>
+	<Import Project="$(VCTargetsPath)\Microsoft.Cpp.props" />
+	<ImportGroup Condition="'$(Configuration)|$(Platform)'=='Release|Win32'" Label="PropertySheets">
+		<Import Project="$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props" Condition="exists('$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props')" Label="LocalAppDataPlatform" />
+		<Import Project="..\..\..\libs\openFrameworksCompiled\project\vs\openFrameworksRelease.props" />
+	</ImportGroup>
+	<ImportGroup Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'" Label="PropertySheets">
+		<Import Project="$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props" Condition="exists('$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props')" Label="LocalAppDataPlatform" />
+		<Import Project="..\..\..\libs\openFrameworksCompiled\project\vs\openFrameworksDebug.props" />
+	</ImportGroup>
+	<PropertyGroup Label="UserMacros" />
+	<PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">
+		<OutDir>bin\</OutDir>
+		<IntDir>obj\$(Configuration)\</IntDir>
+		<TargetName>$(ProjectName)_debug</TargetName>
+		<LinkIncremental>true</LinkIncremental>
+		<GenerateManifest>true</GenerateManifest>
+	</PropertyGroup>
+	<PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">
+		<OutDir>bin\</OutDir>
+		<IntDir>obj\$(Configuration)\</IntDir>
+		<LinkIncremental>false</LinkIncremental>
+	</PropertyGroup>
+	<ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">
+		<ClCompile>
+			<Optimization>Disabled</Optimization>
+			<MinimalRebuild>true</MinimalRebuild>
+			<BasicRuntimeChecks>EnableFastChecks</BasicRuntimeChecks>
+			<PreprocessorDefinitions>%(PreprocessorDefinitions)</PreprocessorDefinitions>
+			<RuntimeLibrary>MultiThreadedDebugDLL</RuntimeLibrary>
+			<WarningLevel>Level3</WarningLevel>
+			<DebugInformationFormat>EditAndContinue</DebugInformationFormat>
+			<AdditionalIncludeDirectories>%(AdditionalIncludeDirectories);..\..\..\addons\ofxVolumetrics\libs;..\..\..\addons\ofxVolumetrics\src;..\..\..\addons\ofxVolumetrics\libs\minc;..\..\..\addons\ofxVolumetrics\libs\minc\include;..\..\..\addons\ofxVolumetrics\libs\minc\include\szip;..\..\..\addons\ofxVolumetrics\libs\minc\include\volume_io;..\..\..\addons\ofxVolumetrics\libs\minc\include\zlib;..\..\..\addons\ofxVolumetrics\libs\minc\lib;..\..\..\addons\ofxVolumetrics\libs\minc\lib\vs</AdditionalIncludeDirectories>
+			<CompileAs>CompileAsCpp</CompileAs>
+		</ClCompile>
+		<Link>
+			<GenerateDebugInformation>true</GenerateDebugInformation>
+			<SubSystem>Console</SubSystem>
+			<RandomizedBaseAddress>false</RandomizedBaseAddress>
+			<AdditionalDependencies>%(AdditionalDependencies);szlibdll.lib;hdf5dll.lib;minc2.lib;netcdf.lib;volume_io2.lib</AdditionalDependencies>
+			<AdditionalLibraryDirectories>%(AdditionalLibraryDirectories);..\..\..\addons\ofxVolumetrics\libs\minc\lib\vs</AdditionalLibraryDirectories>
+		</Link>
+	</ItemDefinitionGroup>
+	<ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">
+		<ClCompile>
+			<WholeProgramOptimization>false</WholeProgramOptimization>
+			<PreprocessorDefinitions>%(PreprocessorDefinitions)</PreprocessorDefinitions>
+			<RuntimeLibrary>MultiThreadedDLL</RuntimeLibrary>
+			<WarningLevel>Level3</WarningLevel>
+			<AdditionalIncludeDirectories>%(AdditionalIncludeDirectories);..\..\..\addons\ofxVolumetrics\libs;..\..\..\addons\ofxVolumetrics\src;..\..\..\addons\ofxVolumetrics\libs\minc;..\..\..\addons\ofxVolumetrics\libs\minc\include;..\..\..\addons\ofxVolumetrics\libs\minc\include\szip;..\..\..\addons\ofxVolumetrics\libs\minc\include\volume_io;..\..\..\addons\ofxVolumetrics\libs\minc\include\zlib;..\..\..\addons\ofxVolumetrics\libs\minc\lib;..\..\..\addons\ofxVolumetrics\libs\minc\lib\vs</AdditionalIncludeDirectories>
+			<CompileAs>CompileAsCpp</CompileAs>
+		</ClCompile>
+		<Link>
+			<IgnoreAllDefaultLibraries>false</IgnoreAllDefaultLibraries>
+			<GenerateDebugInformation>false</GenerateDebugInformation>
+			<SubSystem>Console</SubSystem>
+			<OptimizeReferences>true</OptimizeReferences>
+			<EnableCOMDATFolding>true</EnableCOMDATFolding>
+			<RandomizedBaseAddress>false</RandomizedBaseAddress>
+			<AdditionalDependencies>%(AdditionalDependencies);zlib.lib;hdf5dll.lib;minc2.lib;netcdf.lib;volume_io2.lib</AdditionalDependencies>
+			<AdditionalLibraryDirectories>%(AdditionalLibraryDirectories);..\..\..\addons\ofxVolumetrics\libs\minc\lib\vs</AdditionalLibraryDirectories>
+		</Link>
+	</ItemDefinitionGroup>
+	<ItemGroup>
+		<ClCompile Include="src\main.cpp" />
+		<ClCompile Include="src\ofApp.cpp" />
+		<ClCompile Include="..\..\..\addons\ofxVolumetrics\src\ofxTexture3d.cpp" />
+		<ClCompile Include="..\..\..\addons\ofxVolumetrics\src\ofxVolumetrics.cpp" />
+	</ItemGroup>
+	<ItemGroup>
+		<ClInclude Include="src\ofApp.h" />
+		<ClInclude Include="..\..\..\addons\ofxVolumetrics\src\ofxImageSequencePlayer.h" />
+		<ClInclude Include="..\..\..\addons\ofxVolumetrics\src\ofxTexture3d.h" />
+		<ClInclude Include="..\..\..\addons\ofxVolumetrics\src\ofxVolumetrics.h" />
+		<ClInclude Include="..\..\..\addons\ofxVolumetrics\libs\minc\include\config.h" />
+		<ClInclude Include="..\..\..\addons\ofxVolumetrics\libs\minc\include\H5ACprivate.h" />
+		<ClInclude Include="..\..\..\addons\ofxVolumetrics\libs\minc\include\H5ACpublic.h" />
+		<ClInclude Include="..\..\..\addons\ofxVolumetrics\libs\minc\include\H5api_adpt.h" />
+		<ClInclude Include="..\..\..\addons\ofxVolumetrics\libs\minc\include\H5Apkg.h" />
+		<ClInclude Include="..\..\..\addons\ofxVolumetrics\libs\minc\include\H5Aprivate.h" />
+		<ClInclude Include="..\..\..\addons\ofxVolumetrics\libs\minc\include\H5Apublic.h" />
+		<ClInclude Include="..\..\..\addons\ofxVolumetrics\libs\minc\include\H5Bpkg.h" />
+		<ClInclude Include="..\..\..\addons\ofxVolumetrics\libs\minc\include\H5Bprivate.h" />
+		<ClInclude Include="..\..\..\addons\ofxVolumetrics\libs\minc\include\H5Bpublic.h" />
+		<ClInclude Include="..\..\..\addons\ofxVolumetrics\libs\minc\include\H5config.h" />
+		<ClInclude Include="..\..\..\addons\ofxVolumetrics\libs\minc\include\H5Cprivate.h" />
+		<ClInclude Include="..\..\..\addons\ofxVolumetrics\libs\minc\include\H5Cpublic.h" />
+		<ClInclude Include="..\..\..\addons\ofxVolumetrics\libs\minc\include\H5Dpkg.h" />
+		<ClInclude Include="..\..\..\addons\ofxVolumetrics\libs\minc\include\H5Dprivate.h" />
+		<ClInclude Include="..\..\..\addons\ofxVolumetrics\libs\minc\include\H5Dpublic.h" />
+		<ClInclude Include="..\..\..\addons\ofxVolumetrics\libs\minc\include\H5Eprivate.h" />
+		<ClInclude Include="..\..\..\addons\ofxVolumetrics\libs\minc\include\H5Epublic.h" />
+		<ClInclude Include="..\..\..\addons\ofxVolumetrics\libs\minc\include\H5FDcore.h" />
+		<ClInclude Include="..\..\..\addons\ofxVolumetrics\libs\minc\include\H5FDfamily.h" />
+		<ClInclude Include="..\..\..\addons\ofxVolumetrics\libs\minc\include\H5FDgass.h" />
+		<ClInclude Include="..\..\..\addons\ofxVolumetrics\libs\minc\include\H5FDlog.h" />
+		<ClInclude Include="..\..\..\addons\ofxVolumetrics\libs\minc\include\H5FDmpi.h" />
+		<ClInclude Include="..\..\..\addons\ofxVolumetrics\libs\minc\include\H5FDmpio.h" />
+		<ClInclude Include="..\..\..\addons\ofxVolumetrics\libs\minc\include\H5FDmpiposix.h" />
+		<ClInclude Include="..\..\..\addons\ofxVolumetrics\libs\minc\include\H5FDmulti.h" />
+		<ClInclude Include="..\..\..\addons\ofxVolumetrics\libs\minc\include\H5FDprivate.h" />
+		<ClInclude Include="..\..\..\addons\ofxVolumetrics\libs\minc\include\H5FDpublic.h" />
+		<ClInclude Include="..\..\..\addons\ofxVolumetrics\libs\minc\include\H5FDsec2.h" />
+		<ClInclude Include="..\..\..\addons\ofxVolumetrics\libs\minc\include\H5FDsrb.h" />
+		<ClInclude Include="..\..\..\addons\ofxVolumetrics\libs\minc\include\H5FDstdio.h" />
+		<ClInclude Include="..\..\..\addons\ofxVolumetrics\libs\minc\include\H5FDstream.h" />
+		<ClInclude Include="..\..\..\addons\ofxVolumetrics\libs\minc\include\H5FLprivate.h" />
+		<ClInclude Include="..\..\..\addons\ofxVolumetrics\libs\minc\include\H5FOprivate.h" />
+		<ClInclude Include="..\..\..\addons\ofxVolumetrics\libs\minc\include\H5Fpkg.h" />
+		<ClInclude Include="..\..\..\addons\ofxVolumetrics\libs\minc\include\H5Fprivate.h" />
+		<ClInclude Include="..\..\..\addons\ofxVolumetrics\libs\minc\include\H5Fpublic.h" />
+		<ClInclude Include="..\..\..\addons\ofxVolumetrics\libs\minc\include\H5FSprivate.h" />
+		<ClInclude Include="..\..\..\addons\ofxVolumetrics\libs\minc\include\H5Gpkg.h" />
+		<ClInclude Include="..\..\..\addons\ofxVolumetrics\libs\minc\include\H5Gprivate.h" />
+		<ClInclude Include="..\..\..\addons\ofxVolumetrics\libs\minc\include\H5Gpublic.h" />
+		<ClInclude Include="..\..\..\addons\ofxVolumetrics\libs\minc\include\H5HGpkg.h" />
+		<ClInclude Include="..\..\..\addons\ofxVolumetrics\libs\minc\include\H5HGprivate.h" />
+		<ClInclude Include="..\..\..\addons\ofxVolumetrics\libs\minc\include\H5HGpublic.h" />
+		<ClInclude Include="..\..\..\addons\ofxVolumetrics\libs\minc\include\H5HLpkg.h" />
+		<ClInclude Include="..\..\..\addons\ofxVolumetrics\libs\minc\include\H5HLprivate.h" />
+		<ClInclude Include="..\..\..\addons\ofxVolumetrics\libs\minc\include\H5HLpublic.h" />
+		<ClInclude Include="..\..\..\addons\ofxVolumetrics\libs\minc\include\H5HPprivate.h" />
+		<ClInclude Include="..\..\..\addons\ofxVolumetrics\libs\minc\include\H5Ipkg.h" />
+		<ClInclude Include="..\..\..\addons\ofxVolumetrics\libs\minc\include\H5Iprivate.h" />
+		<ClInclude Include="..\..\..\addons\ofxVolumetrics\libs\minc\include\H5Ipublic.h" />
+		<ClInclude Include="..\..\..\addons\ofxVolumetrics\libs\minc\include\H5MFprivate.h" />
+		<ClInclude Include="..\..\..\addons\ofxVolumetrics\libs\minc\include\H5MMprivate.h" />
+		<ClInclude Include="..\..\..\addons\ofxVolumetrics\libs\minc\include\H5MMpublic.h" />
+		<ClInclude Include="..\..\..\addons\ofxVolumetrics\libs\minc\include\H5MPprivate.h" />
+		<ClInclude Include="..\..\..\addons\ofxVolumetrics\libs\minc\include\H5Opkg.h" />
+		<ClInclude Include="..\..\..\addons\ofxVolumetrics\libs\minc\include\H5Oprivate.h" />
+		<ClInclude Include="..\..\..\addons\ofxVolumetrics\libs\minc\include\H5Opublic.h" />
+		<ClInclude Include="..\..\..\addons\ofxVolumetrics\libs\minc\include\H5Ppkg.h" />
+		<ClInclude Include="..\..\..\addons\ofxVolumetrics\libs\minc\include\H5Pprivate.h" />
+		<ClInclude Include="..\..\..\addons\ofxVolumetrics\libs\minc\include\H5Ppublic.h" />
+		<ClInclude Include="..\..\..\addons\ofxVolumetrics\libs\minc\include\H5private.h" />
+		<ClInclude Include="..\..\..\addons\ofxVolumetrics\libs\minc\include\H5pubconf.h" />
+		<ClInclude Include="..\..\..\addons\ofxVolumetrics\libs\minc\include\H5public.h" />
+		<ClInclude Include="..\..\..\addons\ofxVolumetrics\libs\minc\include\H5RCprivate.h" />
+		<ClInclude Include="..\..\..\addons\ofxVolumetrics\libs\minc\include\H5Rprivate.h" />
+		<ClInclude Include="..\..\..\addons\ofxVolumetrics\libs\minc\include\H5Rpublic.h" />
+		<ClInclude Include="..\..\..\addons\ofxVolumetrics\libs\minc\include\H5RSprivate.h" />
+		<ClInclude Include="..\..\..\addons\ofxVolumetrics\libs\minc\include\H5SLprivate.h" />
+		<ClInclude Include="..\..\..\addons\ofxVolumetrics\libs\minc\include\H5Spkg.h" />
+		<ClInclude Include="..\..\..\addons\ofxVolumetrics\libs\minc\include\H5Sprivate.h" />
+		<ClInclude Include="..\..\..\addons\ofxVolumetrics\libs\minc\include\H5Spublic.h" />
+		<ClInclude Include="..\..\..\addons\ofxVolumetrics\libs\minc\include\H5STprivate.h" />
+		<ClInclude Include="..\..\..\addons\ofxVolumetrics\libs\minc\include\H5Tpkg.h" />
+		<ClInclude Include="..\..\..\addons\ofxVolumetrics\libs\minc\include\H5Tprivate.h" />
+		<ClInclude Include="..\..\..\addons\ofxVolumetrics\libs\minc\include\H5Tpublic.h" />
+		<ClInclude Include="..\..\..\addons\ofxVolumetrics\libs\minc\include\H5TSprivate.h" />
+		<ClInclude Include="..\..\..\addons\ofxVolumetrics\libs\minc\include\H5Vprivate.h" />
+		<ClInclude Include="..\..\..\addons\ofxVolumetrics\libs\minc\include\H5Zpkg.h" />
+		<ClInclude Include="..\..\..\addons\ofxVolumetrics\libs\minc\include\H5Zprivate.h" />
+		<ClInclude Include="..\..\..\addons\ofxVolumetrics\libs\minc\include\H5Zpublic.h" />
+		<ClInclude Include="..\..\..\addons\ofxVolumetrics\libs\minc\include\hdf5.h" />
+		<ClInclude Include="..\..\..\addons\ofxVolumetrics\libs\minc\include\internal_volume_io.h" />
+		<ClInclude Include="..\..\..\addons\ofxVolumetrics\libs\minc\include\minc.h" />
+		<ClInclude Include="..\..\..\addons\ofxVolumetrics\libs\minc\include\minc2.h" />
+		<ClInclude Include="..\..\..\addons\ofxVolumetrics\libs\minc\include\minc_compat.h" />
+		<ClInclude Include="..\..\..\addons\ofxVolumetrics\libs\minc\include\minc_simple.h" />
+		<ClInclude Include="..\..\..\addons\ofxVolumetrics\libs\minc\include\nd_loop.h" />
+		<ClInclude Include="..\..\..\addons\ofxVolumetrics\libs\minc\include\netcdf.h" />
+		<ClInclude Include="..\..\..\addons\ofxVolumetrics\libs\minc\include\ParseArgv.h" />
+		<ClInclude Include="..\..\..\addons\ofxVolumetrics\libs\minc\include\szip\mcgill.h" />
+		<ClInclude Include="..\..\..\addons\ofxVolumetrics\libs\minc\include\szip\rice.h" />
+		<ClInclude Include="..\..\..\addons\ofxVolumetrics\libs\minc\include\szip\ricehdf.h" />
+		<ClInclude Include="..\..\..\addons\ofxVolumetrics\libs\minc\include\szip\SZconfig.h" />
+		<ClInclude Include="..\..\..\addons\ofxVolumetrics\libs\minc\include\szip\szip_adpt.h" />
+		<ClInclude Include="..\..\..\addons\ofxVolumetrics\libs\minc\include\szlib.h" />
+		<ClInclude Include="..\..\..\addons\ofxVolumetrics\libs\minc\include\time_stamp.h" />
+		<ClInclude Include="..\..\..\addons\ofxVolumetrics\libs\minc\include\volume_io\alloc.h" />
+		<ClInclude Include="..\..\..\addons\ofxVolumetrics\libs\minc\include\volume_io\arrays.h" />
+		<ClInclude Include="..\..\..\addons\ofxVolumetrics\libs\minc\include\volume_io\basic.h" />
+		<ClInclude Include="..\..\..\addons\ofxVolumetrics\libs\minc\include\volume_io\def_math.h" />
+		<ClInclude Include="..\..\..\addons\ofxVolumetrics\libs\minc\include\volume_io\files.h" />
+		<ClInclude Include="..\..\..\addons\ofxVolumetrics\libs\minc\include\volume_io\geometry.h" />
+		<ClInclude Include="..\..\..\addons\ofxVolumetrics\libs\minc\include\volume_io\geom_structs.h" />
+		<ClInclude Include="..\..\..\addons\ofxVolumetrics\libs\minc\include\volume_io\multidim.h" />
+		<ClInclude Include="..\..\..\addons\ofxVolumetrics\libs\minc\include\volume_io\progress.h" />
+		<ClInclude Include="..\..\..\addons\ofxVolumetrics\libs\minc\include\volume_io\string_funcs.h" />
+		<ClInclude Include="..\..\..\addons\ofxVolumetrics\libs\minc\include\volume_io\system_dependent.h" />
+		<ClInclude Include="..\..\..\addons\ofxVolumetrics\libs\minc\include\volume_io\transforms.h" />
+		<ClInclude Include="..\..\..\addons\ofxVolumetrics\libs\minc\include\volume_io\volume.h" />
+		<ClInclude Include="..\..\..\addons\ofxVolumetrics\libs\minc\include\volume_io\volume_cache.h" />
+		<ClInclude Include="..\..\..\addons\ofxVolumetrics\libs\minc\include\volume_io\vol_io_prototypes.h" />
+		<ClInclude Include="..\..\..\addons\ofxVolumetrics\libs\minc\include\volume_io.h" />
+		<ClInclude Include="..\..\..\addons\ofxVolumetrics\libs\minc\include\voxel_loop.h" />
+		<ClInclude Include="..\..\..\addons\ofxVolumetrics\libs\minc\include\zlib\zconf.h" />
+		<ClInclude Include="..\..\..\addons\ofxVolumetrics\libs\minc\include\zlib.h" />
+	</ItemGroup>
+	<ItemGroup>
+		<ProjectReference Include="..\..\..\libs\openFrameworksCompiled\project\vs\openframeworksLib.vcxproj">
+			<Project>{5837595d-aca9-485c-8e76-729040ce4b0b}</Project>
+		</ProjectReference>
+	</ItemGroup>
+	<ItemGroup>
+		<ResourceCompile Include="icon.rc">
+			<AdditionalOptions Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">/D_DEBUG %(AdditionalOptions)</AdditionalOptions>
+		</ResourceCompile>
+	</ItemGroup>
+	<Import Project="$(VCTargetsPath)\Microsoft.Cpp.targets" />
+</Project>
