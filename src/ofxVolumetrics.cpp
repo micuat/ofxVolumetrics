@@ -331,6 +331,9 @@ void ofxVolumetrics::drawVolume(float x, float y, float z, float w, float h, flo
 
     glColor4iv(color);
     ofSetupScreenOrtho();//ofGetWidth(), ofGetHeight(),OF_ORIENTATION_DEFAULT,false,0,1000);
+    ofTranslate(ofGetWidth()/2, ofGetHeight()/2);
+    ofScale(1, -1);
+    ofTranslate(-ofGetWidth()/2, -ofGetHeight()/2);
     fboRender.draw(0,0,ofGetWidth(),ofGetHeight());
 
     ofPopView();
