@@ -18,6 +18,8 @@ void ofApp::setup(){
     unsigned int  sizes[3];
     char          *usage;
     char          voxel_or_world;
+    unsigned long start[3], count[3];
+    double        *slab;
 
     /* open the volume - first and only command line argument */
     result = miopen_volume(ofToDataPath("t1.mnc").c_str(), MI2_OPEN_READ, &minc_volume);
@@ -30,6 +32,17 @@ void ofApp::setup(){
 			  MI_DIMATTR_ALL, MI_DIMORDER_FILE,
 			  3, dimensions);
     result = miget_dimension_sizes(dimensions, 3, sizes);
+
+    /* allocate memory for the hyperslab - make it size of entire volume */
+    slab = new double[sizes[0] * sizes[1] * sizes[2]];
+    start[0] = start[1] = start[2] = 0;
+    count[0] = sizes[0];
+    count[1] = sizes[1];
+    count[2] = sizes[2];
+    if (miget_real_value_hyperslab(minc_volume, MI_TYPE_DOUBLE,
+				 start, count, slab) != MI_NOERROR) {
+        fprintf(stderr, "Error getting hyperslab\n");
+    }
 
     volWidth = sizes[0];
     volHeight = sizes[1];
@@ -63,8 +76,8 @@ void ofApp::setup(){
                     voxel_location[0] = x;
                     voxel_location[1] = y;
                     voxel_location[2] = z;
-                    miget_real_value(minc_volume, voxel_location, 3, &voxel);
-                    
+                    //miget_real_value(minc_volume, voxel_location, 3, &voxel);
+                    voxel = slab[i4 / 4];
                     sample = voxel * 0.5;
 
                     ofColor c;
@@ -77,6 +90,8 @@ void ofApp::setup(){
             }
         }
     }
+
+    delete slab;
 
     myVolume.setup(volWidth, volHeight, volDepth, ofVec3f(1,1,1),true);
     myVolume.updateVolumeData(volumeData,volWidth,volHeight,volDepth,0,0,0);
